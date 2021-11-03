@@ -4,6 +4,3 @@ CURRENT_USER=$( scutil <<< "show State:/Users/ConsoleUser" | awk '/Name :/ && ! 
 
 sudo -u $CURRENT_USER defaults read com.panic.Transmit | grep SerialNumber5 | cut -d'"' -f 2
 
-
-
-sudo u $CURRENT_USER defaults read | grep ShareIdentity -A 3 | sed -n 4p | cut -d'"' -f2
